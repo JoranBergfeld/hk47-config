@@ -6,3 +6,6 @@ The manual steps I used are documented here: https://github.com/bitnami-labs/sea
 I've created my own certificate and used it to sign all secrets here. 
 I've done this to be able to repeat the process frequently of creating and destroying my cluster.
 
+To install the sealed secret, follow the instructions on the github page here: https://github.com/bitnami-labs/sealed-secrets
+
+After, it's required to install the gitops operator. 
