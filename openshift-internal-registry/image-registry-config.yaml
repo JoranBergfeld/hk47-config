@@ -20,11 +20,3 @@ spec:
     pvc:
       claim: image-registry-storage
   unsupportedConfigOverrides: null
-
-
-
-regLogLevel: Normal
-regManagementState: Managed
-regOperatorLogLevel: Normal
-regRolloutStrategy: Recreate
-
