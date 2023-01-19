@@ -5,9 +5,7 @@ metadata:
 spec:
   logLevel: Normal
   managementState: Managed
-  observedConfig: null
   operatorLogLevel: Normal
-  proxy: {}
   replicas: 1
   requests:
     read:
@@ -16,7 +14,5 @@ spec:
       maxWaitInQueue: 0s
   rolloutStrategy: Recreate
   storage:
-    managementState: Managed
-    pvc:
-      claim: image-registry-storage
-  unsupportedConfigOverrides: null
+    s3:
+      region: eu-west-1
