@@ -1,0 +1,16 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: nexus-route
+  namespace: nexus
+  labels:
+    app.kubernetes.io/managed-by: Helm
+spec:
+  to:
+    kind: Service
+    name: nexus-joranbergfeld-sonatype-nexus-service
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  port:
+    targetPort: application
